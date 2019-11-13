@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Page image vertical and horizontal -->
+    <dimen name="page_image_vertical_margin">16dp</dimen>
+    <dimen name="page_image_horizontal_margin">8dp</dimen>
+
+    <!-- Page title text size -->
+    <dimen name="page_title_text_size">16sp</dimen>
+
+    <!-- Margin for search interface -->
+    <dimen name="search_view_inset">8dp</dimen>
+
+    <!-- Error text size -->
+    <dimen name="error_text_size">20sp</dimen>
+</resources>

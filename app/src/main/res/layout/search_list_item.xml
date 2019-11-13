@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/pageImageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/content_description_page_image"
+        android:paddingStart="@dimen/page_image_horizontal_margin"
+        android:paddingTop="@dimen/page_image_vertical_margin"
+        android:paddingEnd="@dimen/page_image_horizontal_margin"
+        android:paddingBottom="@dimen/page_image_vertical_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="@fraction/width_percentage"
+        app:placeholderImageScaleType="fitXY"
+        app:viewAspectRatio="1"
+        tools:placeholderImage="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlackText"
+        android:textSize="@dimen/page_title_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/pageDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pageImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Albert Einstein" />
+
+    <TextView
+        android:id="@+id/pageDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        app:layout_constraintBottom_toBottomOf="@+id/pageImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pageImageView"
+        app:layout_constraintTop_toBottomOf="@+id/pageTitle"
+        tools:text="German American physicist and founder and theory of ..." />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WikipediaSearch</string>
+    <string name="menu_title_search">Search</string>
+
+    <string name="content_description_page_image">Page Image Thumbnail</string>
+
+    <!-- Empty source error response -->
+    <string name="empty_source">No Web page to visit</string>
+
+    <string name="empty_search_results">No results found for the search</string>
+</resources>
